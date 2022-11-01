@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>e-commerce</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Sneakers</h1>
+    <div class="txt">
+      <div class="menu">
+        <span class=""></span>
+        <span class=""></span>
+        <span class=""></span>
+      </div>
+      <div class="sub-menu-wrap">
+        <div class="sub-menu">
+          <div class="user-info">
+            <img src="images/user.png">
+            <h4>Abdo Ahmed</h4>
+          </div>
+          <hr>
+          <a href="#" class="sub-menu-link"> <img src="images/shopping-cart.png">
+            <p>Your Cart</p>
+            <span>></span>
+          </a>
+          <a href="#" class="sub-menu-link">
+            <img src="images/setting.png">
+            <p>Settings</p>
+            <span>></span>
+          </a>
+          <a href="#" class="sub-menu-link">
+            <img src="images/help.png">
+            <p>Help & Support</p>
+            <span>></span>
+          </a>
+          <a href="#" class="sub-menu-link">
+            <img src="images/profile.png">
+            <p>Edit profile</p>
+            <span>></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <br><br>
+  <div class="line">
+  </div>
+  <br><br>
+  <div class="product-place">
+    <img class="product" src="images/image-product-1.jpg">
+  </div>
+  <div class="words">
+    <p class="company">Sneaker company</p>
+    <h1>Fall Limited Edition Sneakers</h1>
+    <p class="discretion">These low-profile sneakers are your <br /> perfect casual wear companion.<br> Featuring a</p>
+    <span class="price">$125.00</span>
+    <span class="discount">-50%</span>
+    <span class="del"><del>$250.00</del></span>
+    <br>
+    <span class="decrease" id="decrease">-</span>
+    <label class="constant" id="count">0</label>
+    <span class="increase" id="increase">+</span>
+    <div class="btn">
+      <button class="buy">Buy now</button>
+      <button class="add">Add to card</button>
+    </div>
+  </div>
+  <script>
+    let count = 0;
+
+    document.getElementById("decrease").onclick
+
+    = function() {
+      count -= 1;
+
+      document.getElementById("count").innerHTML = count;
+
+      document.getElementById("count").innerHTML = count
+    }
+
+    document.getElementById("increase").onclick = function() {
+      count += 1;
+
+      document.getElementById("count").innerHTML = count;
+    }
+  </script>
+</body>
+</html>
